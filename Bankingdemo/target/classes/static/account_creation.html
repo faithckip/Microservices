@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banking System</title>
+    <link th:href="@{/css/bootstrap/css/bootstrap.css}" type="text/css" rel="stylesheet">
+    <link th:href="@{/css/default.css}" type="text/css" rel="stylesheet">
+    <link th:href="@{/css/fontawesome/css/all.css}" type="text/css" rel="stylesheet">
+
+    <div th:insert="header.html"></div>
+
+</head>
+
+<body th:style="|background : url(@{/images/home-2.jpg});|">
+<div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold text-white">Account Creation Screen</h1>
+    <p class="col-md-8 fs-4 text-white">
+        Welcome to Internet Banking   </p>
+      
+<form action="save" method="post">    
+<table>    
+<tr>    
+<td><label for="Name">Name</label></td>    
+<td><input type="text" name="Name"></input></td>    
+ </tr>    
+<tr>    
+<td><label for="DoB">DOB</label></td>    
+<td><input type="text" name="DOB"></input></td>    
+</tr> 
+<tr>    
+<td><label for="Address">Address</label></td>    
+<td><input type="text" name="Address"></input></td>    
+</tr>
+<tr>    
+<td><label for="Email ID">Email ID</label></td>    
+<td><input type="text" name="Email ID"></input></td>    
+</tr> 
+<tr>    
+<td><label for="Type of Account">Type of Account</label></td>    
+<td><input type="text" name="Type of Account"></input></td>    
+</tr>  
+<tr>    
+<td></td>    
+<td><input type="submit" value="Create Account"></input></td>    
+</tr>    
+</table>    
+</form>   
+
+    <a class="btn btn-primary " href="/register.html" role="button">Register</a>
+    <a class="btn btn-primary  " href="/Main_Menu.html" role="button">Main Menu</a>
+
+</div>
+
+
+<div th:insert="footer.html"></div>
+<script th:src="@{/css/bootstrap/js/bootstrap.js}"></script>
+
+</body>
+</html>
+</body>
+</html>

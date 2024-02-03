@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banking System</title>
+    <link th:href="@{/css/bootstrap/css/bootstrap.css}" type="text/css" rel="stylesheet">
+    <link th:href="@{/css/default.css}" type="text/css" rel="stylesheet">
+    <link th:href="@{/css/fontawesome/css/all.css}" type="text/css" rel="stylesheet">
+
+    <div th:insert="header.html"></div>
+
+</head>
+
+<body th:style="|background : url(@{/images/home-2.jpg});|">
+<div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold text-white">Banking System</h1>
+    <p class="col-md-8 fs-4 text-white">
+        Welcome to Internet Banking   </p>
+      
+<form action="/Login" method="post">    
+<table>    
+<tr>    
+<td><label for="user-name">User Name</label></td>    
+<td><input type="text" name="name"></input></td>    
+ </tr>    
+<tr>    
+<td><label for="password">Password</label></td>    
+<td><input type="password" name="Password"></input></td>    
+</tr>    
+<tr>    
+<td></td>    
+<td><input type="submit" value="Submit"></input></td>    
+</tr>    
+</table>    
+</form>   
+
+    <a class="btn btn-primary " href="/register.html" role="button">Register</a>
+    <a class="btn btn-primary  " href="/login_form.html" role="button">Login </a>
+    <a class="btn btn-primary  " href="/Main_Menu.html" role="button">Main Menu</a>
+    
+
+</div>
+
+
+<div th:insert="footer.html"></div>
+<script th:src="@{/css/bootstrap/js/bootstrap.js}"></script>
+
+</body>
+</html>
+</body>
+</html>

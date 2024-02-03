@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banking System</title>
+    <link th:href="@{/css/bootstrap/css/bootstrap.css}" type="text/css" rel="stylesheet">
+    <link th:href="@{/css/default.css}" type="text/css" rel="stylesheet">
+    <link th:href="@{/css/fontawesome/css/all.css}" type="text/css" rel="stylesheet">
+
+    <div th:insert="header.html"></div>
+
+</head>
+
+<body th:style="|background : url(@{/images/home-2.jpg});|">
+<div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold text-white">Perform Debit or Credit Operations</h1>
+    <p class="col-md-8 fs-4 text-white">
+        Welcome to Internet Banking   </p>
+      
+<form action="save" method="post">    
+<table>    
+<tr>    
+<td><label for="Account_number">Account Number</label></td>    
+<td><input type="text" name="Account Number"></input></td>    
+ </tr>    
+<tr>    
+<td><label for="Amount">Amount</label></td>    
+<td><input type="text" name="Amount"></input></td>    
+</tr>    
+<tr>    
+<td><input type="submit" value="Debit From"></input></td>    
+<td><input type="submit" value="Credit To"></input></td>    
+</tr>    
+</table>    
+</form>   
+
+    <a class="btn btn-primary " href="/Display_stmt.html" role="button">Statement</a>
+    <a class="btn btn-primary  " href="/" role="button">Learn more</a>
+
+</div>
+
+
+<div th:insert="footer.html"></div>
+<script th:src="@{/css/bootstrap/js/bootstrap.js}"></script>
+
+</body>
+</html>
+</body>
+</html>

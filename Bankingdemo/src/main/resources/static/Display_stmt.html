@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banking System</title>
+    <link th:href="@{/css/bootstrap/css/bootstrap.css}" type="text/css" rel="stylesheet">
+    <link th:href="@{/css/default.css}" type="text/css" rel="stylesheet">
+    <link th:href="@{/css/fontawesome/css/all.css}" type="text/css" rel="stylesheet">
+
+    <div th:insert="header.html"></div>
+
+</head>
+
+<body th:style="|background : url(@{/images/home-2.jpg});|">
+<div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold text-white">Display Statements</h1>
+    <p class="col-md-8 fs-4 text-white">
+        Welcome to Internet Banking   </p>
+      
+<form action="save" method="post">    
+<table>    
+<tr>
+<td><label for="From">From (date):</label></td>
+ <td> <input type="date" id="From" name="FROM"></td>    
+ </tr>    
+<tr>    
+<td><label for="To">To (date):</label></td>
+ <td> <input type="date" id="To" name="TO"></td>
+<td><input type="submit" value="Display"></input></td>   
+<table border = "1">
+         
+         <tr>
+            <th>S/No</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Cheque No</th>
+            <th>Withdraw</th>
+            <th>Deposit</th>
+            <th>Available Balance</th>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>17-07-2023</td>
+            <td>Deposit</td>
+            <td>-</td>
+            <td>-</td>
+            <td>5000</td>
+            <td>40,000</td>
+         </tr>
+         
+         <tr>
+            <td>2</td>
+         </tr>
+      </table>  
+</table>    
+</form>   
+
+    <a class="btn btn-primary " href="/authorize_credit.html" role="button">Authorize Credit Card Transactions</a>
+    <a class="btn btn-primary  " href="/Debit_Credit.html" role="button">Transactions</a>
+
+</div>
+
+
+<div th:insert="footer.html"></div>
+<script th:src="@{/css/bootstrap/js/bootstrap.js}"></script>
+
+</body>
+</html>
+</body>
+</html>

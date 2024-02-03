@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+<package name="com.Application.Banking" extends="struts-default">
+<action name="login" class="login">
+<result name="success">login_success.jsp</result>
+<result name="error">login_error.jsp</result>
+</action>
+</package>
+</struts>
